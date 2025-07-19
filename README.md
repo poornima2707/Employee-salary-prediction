@@ -87,4 +87,6 @@ The best-performing model was saved using `joblib` as `best_model.pkl`.
 3. Run Command:
    ```bash
    streamlit run app.py
-   
+2. Run Command:
+   ```bash
+   streamlit run app.py
