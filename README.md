@@ -84,6 +84,7 @@ The best-performing model was saved using `joblib` as `best_model.pkl`.
 2. Install the required libraries:
    ```bash
    pip install -r requirements.txt
-3. '''bash
+3. Run Command:
+   ```bash
    streamlit run app.py
    
