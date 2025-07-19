@@ -10,12 +10,27 @@ The primary goal is to build a classification model that can determine an employ
 
 ---
 
-## 📊 Dataset
+## 🗂️ Dataset Description
 
-- **Source**: UCI Machine Learning Repository – [Adult Dataset](https://archive.ics.uci.edu/ml/datasets/adult)
-- **Records**: 48,842 instances
-- **Attributes**: Demographic and work-related features
-- **Target**: Binary income classification (`<=50K` or `>50K`)
+This dataset contains demographic and employment-related information for individuals, used to classify whether a person earns more than $50K/year. It originates from the U.S. Census database and is provided on [Kaggle](https://www.kaggle.com/datasets/uciml/adult-census-income).
+
+| **Column Name**     | **Description**                                                                 |
+|---------------------|----------------------------------------------------------------------------------|
+| `age`               | Age of the individual (numeric)                                                 |
+| `workclass`         | Type of employment (e.g., Private, Self-employed, Government, etc.)             |
+| `fnlwgt`            | Final weight – represents the number of people the record represents            |
+| `education`         | Highest level of education completed (e.g., HS-grad, Bachelors)                 |
+| `education-num`     | Education level in numeric form (e.g., 11 = 11th grade)                          |
+| `marital-status`    | Marital status (e.g., Never-married, Married-civ-spouse)                        |
+| `occupation`        | Type of job (e.g., Sales, Exec-managerial, Machine-op-inspct)                   |
+| `relationship`      | Relationship within the household (e.g., Husband, Own-child, Unmarried)         |
+| `race`              | Race of the individual (e.g., White, Black, Asian-Pac-Islander)                 |
+| `gender`            | Gender of the individual (Male or Female)                                       |
+| `capital-gain`      | Capital gains in dollars                                                        |
+| `capital-loss`      | Capital loss in dollars                                                         |
+| `hours-per-week`    | Number of hours worked per week                                                 |
+| `native-country`    | Country of origin (e.g., United-States, India, Mexico)                          |
+| `income`            | **Target label** – income class (`<=50K` or `>50K`)                             |
 
 ---
 
@@ -69,3 +84,6 @@ The best-performing model was saved using `joblib` as `best_model.pkl`.
 2. Install the required libraries:
    ```bash
    pip install -r requirements.txt
+3. '''bash
+   streamlit run app.py
+   
